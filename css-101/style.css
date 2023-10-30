@@ -1,12 +1,15 @@
-h1,
-h2,
-h3,
-h4,
-li,
-p{
-    font-family: sans-serif;
-    color:#444;
+/* This is the universal selector
+we apply it if we want a certain property applied to every element but
+the property must not be inheritable eg a border top */
+/* this selector has the lowest priority  meaning its very easy to override it*/
+* {
+     border-top:5px solid red;
 }
+body{
+    color:#444;
+    font-family:sans-serif;
+}
+
 h1{
     color:#0000ff;
     font-size: 26px;
@@ -136,4 +139,32 @@ a:hover{
 a:active{
     background-color:black;
     font-style:italic;
+}
+/*resolving conflicts for multiple declarations*/
+/* the id selector is prioritized first */
+/* then the class and the pseudoclasses */
+/*then the element */
+/* the universal selector is the last in the hierarchy of priority*/
+/* if for instance you have two class selectors for the same element
+the last one(in the css code)
+ is chosen like in this case text class is chosen over copyright class*/
+ /*if you add the important keyword then its prioritized */
+/* footer p{
+    color:green !important ;
+} */
+/* footer p{
+    color:green;
+}
+
+.copyright{
+    color:yellow;
+}
+.text{
+    color:maroon;
+}
+/* #copyright{
+    color:purple;
+} */
+nav{
+    font-size:18px;
 }
