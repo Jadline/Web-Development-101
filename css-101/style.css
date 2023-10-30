@@ -2,14 +2,37 @@
 we apply it if we want a certain property applied to every element but
 the property must not be inheritable eg a border top */
 /* this selector has the lowest priority  meaning its very easy to override it*/
-* {
+/* * {
      border-top:5px solid red;
+} */
+*{
+    margin:0;
+    padding:0;
 }
 body{
     color:#444;
     font-family:sans-serif;
 }
-
+/*padding shorthand padding:20px 40px*/
+/*the first one represents the top and bottom */
+/* the second one represents left and right */
+.main-header{
+    background-color: #f7f7f7;
+    padding:20px 40px;
+    margin-bottom:60px;
+}
+aside{
+    background-color:#f7f7f7;
+    border-top:5px solid #109Bad;
+    border-bottom:5px solid #109Bad;
+    padding:50px 0;
+}
+.post-header{
+    margin-bottom:40px;
+}
+article{
+    margin-bottom:60px;
+}
 h1{
     color:#0000ff;
     font-size: 26px;
@@ -18,10 +41,12 @@ h1{
 }
 h2 {
     font-size:40px;
+    margin-bottom:30px;
 }
 
 h3{
     font-size:30px;
+    margin:40px  0  20px 0;
 }
 
 h4{
@@ -35,10 +60,17 @@ h1,h2,h3,h4{
 p{
     font-size:22px;
     line-height:1.5;
+    margin-bottom:15px;
+}
+ol,ul{
+    margin-left:50px;
+    margin-bottom:20px;
 }
 li{
     font-size:20px;
+    margin-bottom:10px;
 }
+
 /*header p{
     font-style: italic;
 }*/
@@ -64,14 +96,7 @@ li{
 .related{
     list-style:none;
 }
-.main-header{
-    background-color: #f7f7f7;
-}
-aside{
-    background-color:#f7f7f7;
-    border-top:5px solid #109Bad;
-    border-bottom:5px solid #109Bad;
-}
+
 /* styling the first element of the list*/
 /* .first-li{
     font-weight:bold;
@@ -82,6 +107,7 @@ li:first-child{
 }
 li:last-child{
     font-style:italic;
+    margin-bottom: 0;
 }
 li:nth-child(2){
     color:red;
