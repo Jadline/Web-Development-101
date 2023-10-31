@@ -20,12 +20,14 @@ body{
     background-color: #f7f7f7;
     padding:20px 40px;
     margin-bottom:60px;
+    height:80px;
 }
 aside{
     background-color:#f7f7f7;
     border-top:5px solid #109Bad;
     border-bottom:5px solid #109Bad;
     padding:50px 0;
+    width:500px;
 }
 .post-header{
     margin-bottom:40px;
@@ -194,3 +196,13 @@ the last one(in the css code)
 nav{
     font-size:18px;
 }
+.container{
+    width:700px;
+    margin:0 auto;
+}
+/* you set the height to auto if its already specified in html */
+.post-image{
+    width :100%;
+
+}
+
