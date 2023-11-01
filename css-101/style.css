@@ -12,6 +12,7 @@ the property must not be inheritable eg a border top */
 body{
     color:#444;
     font-family:sans-serif;
+    position:relative;
 }
 /*padding shorthand padding:20px 40px*/
 /*the first one represents the top and bottom */
@@ -32,6 +33,7 @@ aside{
 .post-header{
     margin-bottom:40px;
 }
+
 article{
     margin-bottom:60px;
 }
@@ -199,10 +201,42 @@ nav{
 .container{
     width:700px;
     margin:0 auto;
+    /* position:relative; */
 }
 /* you set the height to auto if its already specified in html */
+/*images are inline-block level elements*/
 .post-image{
     width :100%;
+    /* margin:100px; */
 
+}
+/*we know that anchor elements are inline elements*/
+/*for inline elements the vertical margins and paddings remain unchanged */
+/*the widths and the height properties do not apply */
+/*they occupy only the required space for their elements */
+nav a:link ,a:visited{
+    /* background-color:orangered;
+    color:white;
+    margin:20px;
+    padding:20px; */
+    margin-right:20px;
+    margin-top:10px;
+    display:inline-block;
+
+}
+nav a:link:last-child,a:visited:last-child{
+    margin-right:0;
+}
+/*the inline-block properties is where the elements occupies the content's space only*/
+/*therefore causes no line breaks*/
+/*but the box model applies as shown ie paddings and margins apply*/
+.new_button{
+    font-size:20px;
+    padding:20px;
+    cursor:pointer;
+
+    position:absolute;
+    bottom:50px;
+    right:50px;
 }
 
