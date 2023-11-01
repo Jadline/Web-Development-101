@@ -197,6 +197,7 @@ the last one(in the css code)
 } */
 nav{
     font-size:18px;
+    text-align:center;
 }
 .container{
     width:700px;
@@ -238,5 +239,45 @@ nav a:link:last-child,a:visited:last-child{
     position:absolute;
     bottom:50px;
     right:50px;
+}
+/*styling pseudo-elements */
+/*for example if we want to style the first letter of a paragraph or an h1*/
+/* h1::first-letter{
+    font-style:normal;
+    margin-right:5px;
+}
+h2::first-letter{
+    font-size:60px;
+} */
+
+/*first line of every paragraph*/
+/* p::first-line{
+    color:red;
+} */
+
+/*the adjacent sibling is the element after that element*/
+/*sibling elements are elements in the same container*/
+/*am painting  first-line of a p element that comes after the h3*/
+/* h3 + p::first-line{
+    color:red;
+} */
+
+h2{
+    /* background-color:orange; */
+    position:relative;
+}
+/*the before and after pseudoelements */
+h2::after{
+    content:"TOP";
+    background-color:#ffe70e;
+    color:black;
+    font-size:16px;
+    font-weight:bold;
+    display:inline-block; /*we have changed it to inline-block so we 
+    can apply the box model properties like padding*/
+    padding:5px 10px;  
+    position:absolute;
+    top:-15px;
+    right:-25px;
 }
 
