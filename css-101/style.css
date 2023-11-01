@@ -214,16 +214,16 @@ nav{
 /*for inline elements the vertical margins and paddings remain unchanged */
 /*the widths and the height properties do not apply */
 /*they occupy only the required space for their elements */
-nav a:link ,a:visited{
+/* nav a:link ,a:visited{
     /* background-color:orangered;
     color:white;
     margin:20px;
     padding:20px; */
-    margin-right:20px;
+    /* margin-right:20px;
     margin-top:10px;
     display:inline-block;
 
-}
+}  */
 nav a:link:last-child,a:visited:last-child{
     margin-right:0;
 }
