@@ -43,8 +43,6 @@ button{
 button:hover{
     color:black;
     background-color:orange;
-    /* border-top:5px solid black;
-    border-bottom:5px solid black;*/
 } 
 ul{
     list-style:square;
@@ -72,7 +70,66 @@ li{
 .product-details{
     text-transform:uppercase;
     font-size:22px;
-    margin-bottom:40px;
+    margin-top:40px;
     margin-bottom:20px;
 }
 /*margins do not work for small elements like anchors */
+h2{
+    position:relative;
+}
+
+h2::after{
+    content:"SALE";
+    background-color:red;
+    color:white;
+    font-size:16px;
+    display:inline-block;
+    padding:5px 10px;
+    position:absolute;
+    top:-20px;
+    left:-35px;
+}
+ .main-container{
+    background-color:yellow;
+    display:inline-block;
+    /* width:50px;
+    height:50px;
+    margin-right:10px; */
+ }
+.container-one{
+    background-color:black;
+    width:50px;
+    height:50px;
+    margin:10px;  
+} 
+.container-two{
+    background-color:maroon;
+    width:50px;
+    height:50px;
+    margin:10px;
+}
+.container-three{
+    background-color:purple;
+    /* width:50px;
+    height:50px;
+    margin-right:10px; */
+}
+.container-four{
+    background-color:red;
+    /* width:50px;
+    height:50px;
+    margin-right:10px; */
+}
+.container-five{
+    background-color:greenyellow;
+    /* width:50px;
+    height:50px;
+    margin-right:10px; */
+
+}
+.container-six {
+    background-color:orangered;
+    /* width:50px;
+    height:50px;
+    margin-right:10px; */
+}
