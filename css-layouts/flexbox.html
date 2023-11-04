@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .el--1 {
+        background-color: blueviolet;
+      }
+      .el--2 {
+        background-color: orangered;
+      }
+      .el--3 {
+        background-color: green;
+        height: 150px;
+      }
+      .el--4 {
+        background-color: goldenrod;
+      }
+      .el--5 {
+        background-color: palevioletred;
+      }
+      .el--6 {
+        background-color: steelblue;
+      }
+      .el--7 {
+        background-color: yellow;
+      }
+      .el--8 {
+        background-color: crimson;
+      }
+
+      .container {
+        /* STARTER */
+        font-family: sans-serif;
+        background-color: #ddd;
+        font-size: 34px;
+        margin: 40px;
+
+        /* FLEXBOX */
+        display:flex;
+        /*this is when we are vertically working with the items*/
+
+        /*to center the flex-items*/
+        align-items:center;
+        justify-content:flex-start;
+        /*when you use the gap property there is no need to remove the margin in the last element*/
+        /*this is because there is no margin*/
+        /*we use the gap property instead of the margin property*/
+        gap: 10px;
+
+
+
+        /*to display them at the start  of the container vertically*/
+        /* align-items:flex-start;
+
+        /*to display them at the end of the container vertically*/
+        /* align-items:flex-end; */
+
+        /*the default*/
+        /* align-items:stretch; */
+
+        /*align-self is on the cross-axis for a certain element*/
+        /*justify-self is for the main-axis*/
+      }
+      .el{
+      /*DEFAULTS FOR FLEX PROPERTY*/
+        /*this are the defaults*/
+
+        /* 
+        flex-grow: 0;
+        flex-shrink:1;
+        flex-basis:auto 
+        */
+        /*to set the width*/
+        /*flex-basis unlike flex-grow does not distribute all the available space*/
+        /* flex-basis:200px;  this one sets an item to a specific width */
+        /* flex-shrink:0;
+        flex-grow:1; /*flex-grow distributes all the available space evenly */
+        /*FLEX GROW SHRINK BASIS*/
+        flex:1 0 auto;
+      }
+      .el--1{ 
+        /*if you use flex-grow on only one of the items*/
+        /*all the other items will take the width of their contents*/
+        /*the remaining space is then used by the element whose flex-grow is 1*/
+        /* flex-grow:1; */
+
+        /*if you set the flex-grow to 2 for only one elemement */
+        /*that element will receive a double of the space than the other elements that have flex-grow set to 1*/
+        /* flex-grow:2; */
+        align-self:flex-start;
+      }
+      .el--4{
+        align-self:center;
+        order:1; /*to make it the last element*/
+      }
+      .el--6{
+        order:-1; /*to make it the first element*/
+      }
+      .el--5{
+        align-self:stretch;
+        order:2;
+      }
+      /* .el--7{
+        order:-2;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container"> <!--This is the flex container -->
+      <div class="el el--1">HTML</div> <!--The children of the container are the flex-items-->
+      <div class="el el--2">and</div>
+      <div class="el el--3">CSS</div>
+      <div class="el el--4">are</div>
+      <div class="el el--5">amazing</div>
+      <!-- <div class="el el--6">languages</div>
+      <div class="el el--7">to</div>
+      <div class="el el--8">learn</div> -->
+    </div>
+  </body>
+</html>
