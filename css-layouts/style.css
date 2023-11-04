@@ -68,6 +68,7 @@ p{
     line-height:1.5;
     margin-bottom:15px;
 }
+
 ol,ul{
     margin-left:50px;
     margin-bottom:20px;
@@ -213,8 +214,8 @@ nav{
 /*images are inline-block level elements*/
 .post-image{
     /* width:auto; */
-    margin-top:20px;
-    margin-left:10px;
+    /* margin-top:20px; */
+    /* margin-left:10px; */
     /* margin:100px; */
 
 }
@@ -287,7 +288,9 @@ h2::after{
     top:-15px;
     right:-25px;
 }
+
 /*FLOATS*/
+/*
 .author-img{
     float:left;
     margin-bottom:40px;
@@ -307,24 +310,82 @@ nav{
 .clear{
     clear:both;
 }
-/*the clear fix hack*/
+/*the clearfix hack*/
+/*
 .clearfix::after{
     content: '';
     display:block;
     clear:both
 }
-article{
+/* article{
     /* background-color:green; */
-    width:825px;
+    /* width:825px;
     float :left;
-}
-aside{
+}  */
+/* aside{
     /* background-color:red; */
-    width:300px;
+    /* width:300px;
     float:right;
    
-}
-footer{
+/* } */
+/* footer{
     /* background-color:yellow; */
-    clear:both;
+    /* clear:both;
+} */ 
+
+/*FLEXBOX*/
+/*when you have only two items that you need to apply display flex*/
+/*and you need space between them you use the justify-content:space-between*/
+.main-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.author-box{
+    display:flex;
+    align-items:center;
+    margin-bottom:20px;
+
+}
+.author-box p{
+    margin-bottom:0;
+    margin-left:15px;
+}
+.related-post{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    margin-bottom:30px;
+}
+.related-author{
+    margin-bottom:0;
+    font-size:14px;
+    font-weight:normal;
+    font-style:italic;
+}
+.related-link:link{
+    font-size:17px;
+    font-weight:bold;
+    font-style:normal;
+    margin-bottom:5px;
+    display:inline-block;
+}
+.row{
+    display:flex;
+    gap:75px;
+    margin-bottom:60px;
+    align-items:flex-start;
+}
+/*flex:1 means grow 1 and shrink is 1 and flex-basis is 0*/
+/*css calculates the width for itself but we must specify the width of the aside*/
+article{
+    /* background-color:purple; */
+    /* flex:0 0 825px; */
+    flex:1;
+    margin-bottom:0;
+}
+aside{
+    flex: 0 0 300px;
+    /* background-color:#109Bad; */
+    /* align-self:flex-start; */
 }
