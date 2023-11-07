@@ -21,7 +21,7 @@ body{
 .main-header{
     background-color: #f7f7f7;
     padding:20px 40px;
-    margin-bottom:60px;
+    /* margin-bottom:60px; */
     /* height:80px; */
 }
 aside{
@@ -36,7 +36,7 @@ aside{
 }
 
 article{
-    margin-bottom:60px;
+    /* margin-bottom:60px; */
 }
 h1{
     color:#0000ff;
@@ -370,22 +370,40 @@ nav{
     margin-bottom:5px;
     display:inline-block;
 }
-.row{
+/* .row{
     display:flex;
     gap:75px;
     margin-bottom:60px;
     align-items:flex-start;
-}
+} */
 /*flex:1 means grow 1 and shrink is 1 and flex-basis is 0*/
 /*css calculates the width for itself but we must specify the width of the aside*/
-article{
-    /* background-color:purple; */
-    /* flex:0 0 825px; */
+/* article{
+    background-color:purple; */ 
+    /* flex:0 0 825px;
     flex:1;
     margin-bottom:0;
 }
-aside{
+/* aside{
     flex: 0 0 300px;
-    /* background-color:#109Bad; */
-    /* align-self:flex-start; */
+    background-color:#109Bad;
+    align-self:flex-start;
+} */
+
+/*CSS-GRID-LAYOUT*/
+.container{
+    display:grid;
+    grid-template-columns:1fr 300px;
+    column-gap:75px;
+    row-gap:60px;
+    align-items:start;
+}
+.main-header{
+    grid-column:1 / -1;
+}
+article{}
+aside{}
+footer{
+
+    grid-column:1/-1;
 }
