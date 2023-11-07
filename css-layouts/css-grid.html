@@ -36,24 +36,73 @@
         /* STARTER */
         font-family: sans-serif;
         background-color: #ddd;
-        font-size: 40px;
+        font-size: 32px;
         margin: 40px;
 
         /* CSS GRID */
+        display:grid;
+        /* grid-template-columns:1fr 1fr 1fr auto; */
+        /* grid-template-rows:300px 200px; */
+        /* grid-template-columns:repeat(3,1fr); the last row is called the implicit rows */
+        /*the first two are called explicit because we explicity defined their height*/
+        grid-template-columns:repeat(4,1fr);
+        grid-template-rows:1fr 1fr;
+        /* gap:30px; */
+        /* height:500px; */
+        column-gap:20px;
+        row-gap:60px;
+        display:none;
       }
 
       .container--2 {
+      
         /* STARTER */
         font-family: sans-serif;
         background-color: black;
         font-size: 40px;
-        margin: 100px;
+        margin: 40px;
 
-        width: 1000px;
+        width: 700px;
         height: 600px;
 
         /* CSS GRID */
+        display:grid;
+        grid-template-columns:125px 200px 125px;
+        grid-template-rows:250px 100px;
+        gap:50px;
+
+        /*aligning tracks inside the container*/
+        /*empty space distribution*/
+        /*justif aligns tracks  horizontally  in the grid container*/
+        /*while align-content aligns the tracks vertically in the grid container */
+        justify-content:center; /*can also take space-between or start or end */
+        align-content:center; /*can take space between or start or end*/
+        
+        /*aligning the items in the cells */
+        /*moving the grid items around in the cells */
+        /*both align items and justify items also take start,end and center*/
+        align-items:center; /*this is aligning the grid items vertically in the cell*/
+        justify-items:center; /*aligns grid items horizontally in the cell*/
+
+
       }
+      .el--3{
+        align-self:start;
+        justify-self:end;
+      }
+      /* .el--7{
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+      }
+      .el--2{
+        /* grid-column:1 / 2; */
+        /* grid-column:1 / span 3; */
+        /*if you want to span to the end we use -1 */
+        /* grid-column:2 / -1; */
+        /* grid-row: 2 /3 ;
+      }
+      .el--8{ */
+        /* grid-row:3/6; */
     </style>
   </head>
   <body>
