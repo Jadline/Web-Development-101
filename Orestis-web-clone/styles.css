@@ -8,7 +8,7 @@ body{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .main-header{
-    background-color:black;
+    background-color:#000000;
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -25,8 +25,8 @@ a:visited{
     color:white;
 }
 h1{
-    color:Orange;
-    font-size:25px;
+    color:#ff4f00;
+    font-size:40px;
     margin-left:40px;
 }
 .header-links:last-child{
@@ -35,6 +35,8 @@ h1{
 .main-container{
     display:grid;
     grid-template-columns:1fr 1fr 1fr;
+    gap:30px;
+    background-color:black;
 }
 .footer-links a:link{
     display:block;
@@ -46,9 +48,81 @@ footer{
     grid-column:1 / -1;
     background-color:black;
     height:200px;
-    margin-top:30px;
-    text-align:center;
+    padding-left:50px;
 }
 footer p{
     color:red;
+}
+.container-one{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    row-gap:20px;
+    column-gap:100px;
+    align-items:center;
+    justify-items:center;
+    margin-left:50px;
+    /* background-color:black; */
+    color:white;
+    
+}
+.grid-span-to-end{
+    grid-column:1/-1;
+}
+.ai-photo{
+    grid-column:1 / 2;
+    grid-row:5 / 6;
+}
+.speak-photo{
+    grid-column:1 / 2;
+    grid-row:7 / 8;
+}
+.closing{
+    grid-column:1 / -1;
+}
+.grid-item{
+    padding:30px;
+}
+button{
+    padding:20px;
+    margin-top:20px;
+    border-radius:30px;
+    width:200px;
+    background-color:#ff4f00;
+    font-size:16px;
+
+
+}
+h2{
+    margin-bottom:20px;
+    text-transform:uppercase;
+    font-size:30px;
+}
+button:hover{
+    background-color:wheat;
+}
+.closing{
+    position:relative;
+}
+.contact-button{
+    position:absolute;
+    top:10%;
+    right:5%;
+    background-color:black;
+    color:white;
+}
+.p-intouch{
+    position:absolute;
+    top:5%;
+    left:5%;
+    color:black;
+    font-size:80px;
+    font-weight:bold;
+}
+.closing button:hover{
+    background-color:#ff4f00;
+}
+.copyright{
+    font-size:16px;
+    color:orange;
+    margin-left:10px;
 }
