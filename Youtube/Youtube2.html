@@ -8,6 +8,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+        <link href="sidebar.css" rel='stylesheet'>
     </head>
     <body>
         <div class="header">
@@ -19,17 +20,49 @@
                 <input type ='text' placeholder="Search" class="search-bar">
                 <button class="search-button">
                     <img class="search-icon" src= "https://supersimple.dev/public/img/exercises/youtube/icons/search.svg">
+                    <div class="tooltip">search</div>
                 </button>
                 <button class="voice-search-button">
                     <img class="voice-search-icon" src="https://supersimple.dev/public/img/exercises/youtube/icons/voice-search-icon.svg">
+                    <div class="tooltip">Record</div>
                 </button>
             </div>
             <div class="right-section">
                 <img class="upload-icon" src="https://supersimple.dev/public/img/exercises/youtube/icons/upload.svg">
                 <img class="youtube-apps"  src="https://supersimple.dev/public/img/exercises/youtube/icons/youtube-apps.svg">
-                <img class="notifications-icon" src="https://supersimple.dev/public/img/exercises/youtube/icons/notifications.svg">
+                <div class="notifications-container">
+                    <img class="notifications-icon" src="https://supersimple.dev/public/img/exercises/youtube/icons/notifications.svg">
+                    <div class="notifications-count">3</div>
+                </div>
+              
                 <img class="current-user-picture" src="https://supersimple.dev/public/img/exercises/youtube/channel-profile-pics/my-channel.jpeg">
         
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="sidebar-link">
+                <img src="https://supersimple.dev/public/img/exercises/youtube/icons/home.svg">
+                <div>Home</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="https://supersimple.dev/public/img/exercises/youtube/icons/explore.svg">
+                <div>Explore</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="https://supersimple.dev/public/img/exercises/youtube/icons/subscriptions.svg">
+                <div>Subscriptions</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="https://supersimple.dev/public/img/exercises/youtube/icons/originals.svg">
+                <div>Originals</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="https://supersimple.dev/public/img/exercises/youtube/icons/youtube-music.svg">
+                <div>Youtube Music</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="https://supersimple.dev/public/img/exercises/youtube/icons/library.svg">
+                <div>Library</div>
             </div>
         </div>
         
@@ -37,10 +70,13 @@
             <div class="video-preview">
                 <div class = 'thumbnail-row'>
                     <img class = "thumbnail"   src="https://supersimple.dev/public/img/exercises/youtube/thumbnails/thumbnail-1.webp "  alt='thumbnail-photo'>
+                    <div class="video-time">14:20</div>
+                    
                 </div>
                 <div class='video-info-grid'>
                     <div class="channel-picture">
-                        <img class = 'profile-picture' src = 'https://supersimple.dev/public/img/exercises/youtube/channel-profile-pics/channel-1.jpeg'> 
+                        <img class = 'profile-picture' src = 'https://supersimple.dev/public/img/exercises/youtube/channel-profile-pics/channel-1.jpeg'>
+            
                     </div>
                     <div class="video-info">
                         <p class = 'video-title'>Talking Tech and AI with Google CEO Sundar Pichai!</p>
@@ -54,6 +90,7 @@
             <div class="video-preview">
                 <div class = 'thumbnail-row'>
                     <img class = 'thumbnail'  src = 'https://supersimple.dev/public/img/exercises/youtube/thumbnails/thumbnail-2.webp'>
+                    <div class="video-time">9:13</div>
                 </div>
                 <div  class='video-info-grid'>
                     <div class="channel-picture">
@@ -72,6 +109,7 @@
             <div class="video-preview">
                 <div class = 'thumbnail-row'>
                     <img class = "thumbnail"   src="https://supersimple.dev/public/img/exercises/youtube/thumbnails/thumbnail-3.webp "  alt='thumbnail-photo'>
+                    <div class="video-time">22:09</div>
                 </div>
                 <div class='video-info-grid'>
                     <div class="channel-picture">
@@ -90,6 +128,7 @@
             <div class="video-preview">
                 <div class = 'thumbnail-row'>
                     <img class = "thumbnail"   src="https://supersimple.dev/public/img/exercises/youtube/thumbnails/thumbnail-5.webp"  alt='thumbnail-photo'>
+                    <div class="video-time">11:17</div>
                 </div>
                 <div class='video-info-grid'>
                     <div class="channel-picture">
@@ -108,6 +147,7 @@
             <div class="video-preview">
                 <div class = 'thumbnail-row'>
                     <img class = "thumbnail"   src="https://supersimple.dev/public/img/exercises/youtube/thumbnails/thumbnail-4.webp"  alt='thumbnail-photo'>
+                    <div class="video-time">19:59</div>
                 </div>
                 <div class='video-info-grid'>
                     <div class="channel-picture">
@@ -125,6 +165,7 @@
             <div class="video-preview">
                 <div class = 'thumbnail-row'>
                     <img class = "thumbnail"   src="https://supersimple.dev/public/img/exercises/youtube/thumbnails/thumbnail-6.webp "  alt='thumbnail-photo'>
+                    <div class="video-time">10:13</div>
                 </div>
                 <div class='video-info-grid'>
                     <div class="channel-picture">
@@ -143,6 +184,7 @@
             <div class="video-preview">
                 <div class = 'thumbnail-row'>
                     <img class = "thumbnail"   src="https://supersimple.dev/public/img/exercises/youtube/thumbnails/thumbnail-7.webp"  alt='thumbnail-photo'>
+                    <div class="video-time">7:12</div>
                 </div>
                 <div class='video-info-grid'>
                     <div class="channel-picture">
@@ -161,6 +203,7 @@
             <div class="video-preview">
                     <div class = 'thumbnail-row'>
                         <img class = "thumbnail"   src="https://supersimple.dev/public/img/exercises/youtube/thumbnails/thumbnail-8.webp "  alt='thumbnail-photo'>
+                        <div class="video-time">13:17</div>
                     </div>
                 <div class='video-info-grid'>
                     <div class="channel-picture">
@@ -179,6 +222,7 @@
             <div class="video-preview">
                 <div class = 'thumbnail-row'>
                     <img class = "thumbnail"   src="https://supersimple.dev/public/img/exercises/youtube/thumbnails/thumbnail-9.webp "  alt='thumbnail-photo'>
+                    <div class="video-time">7:53</div>
                 </div>
                 <div class='video-info-grid'>
                     <div class="channel-picture">
@@ -197,6 +241,7 @@
             <div class="video-preview">
                 <div class = 'thumbnail-row'>
                     <img class = "thumbnail"   src="https://supersimple.dev/public/img/exercises/youtube/thumbnails/thumbnail-10.webp "  alt='thumbnail-photo'>
+                    <div class="video-time">4:10</div>
                 </div>
                 <div class='video-info-grid'>
                     <div class="channel-picture">
@@ -215,6 +260,7 @@
             <div class="video-preview">
                 <div class = 'thumbnail-row'>
                     <img class = "thumbnail"   src="https://supersimple.dev/public/img/exercises/youtube/thumbnails/thumbnail-11.webp "  alt='thumbnail-photo'>
+                    <div class="video-time">4:51</div>
                 </div>
                 <div class='video-info-grid'>
                     <div class="channel-picture">
@@ -233,6 +279,7 @@
             <div class="video-preview">
                 <div class = 'thumbnail-row'>
                     <img class = "thumbnail"   src="https://supersimple.dev/public/img/exercises/youtube/thumbnails/thumbnail-12.webp"  alt='thumbnail-photo'>
+                    <div class="video-time">13:31</div>
                 </div>
                 <div class='video-info-grid'>
                     <div class="channel-picture">

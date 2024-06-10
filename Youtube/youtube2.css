@@ -6,26 +6,60 @@ p{
     margin :0;
     padding : 0;
 }
-.video-preview{
+/* .video-preview{
     width : 300px;
     display: inline-block;
     vertical-align:top;
 
-}
+} */
+
 .video-grid{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 16px;
     row-gap: 40px;
     padding-top:80px;
+    padding-left:96px;
+    padding-right:24px;
+ 
+}
+/*this is part of the code with activate only if the screen is 600px or less*/
+@media (max-width : 750px){
+    .video-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+@media (min-width : 2000px){
+    .video-grid{
+        grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    }
 }
 .thumbnail-row{
     margin-bottom : 12px;
+    position:relative;
+    
+
+}
+.video-time{
+    background-color:black;
+    color:white;
+    position:absolute;
+    bottom:8px;
+    right:10px;
+    font-family:Roboto,Arial;
+    font-size:12px;
+    font-weight:500;
+    padding-right:2px;
+    padding-top:4px;
+    padding-left:2px;
+    padding-bottom:4px;
+    border-radius:2px;
 
 }
 .thumbnail{
-    display:block;
-    width : 300px;
+    /* display:block;
+    width : 300px; */
+    width:100%;
 }
 .channel-picture{
     width : 50px;
@@ -61,5 +95,5 @@ p{
 
 }
 .body{
-    
+   
 }
