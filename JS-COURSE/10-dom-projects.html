@@ -4,12 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom projects</title>
+    <style>
+        .js-subscribe-button{
+            border : none;
+            background-color : black;
+            color : white;
+            padding-top : 10px;
+            padding-bottom : 10px;
+            padding-left : 15px;
+            padding-right : 15px;
+            font-weight : bold;
+            border-radius : 50px;
+            cursor : pointer;
+
+        }
+        .is-subscribed{
+            background-color : rgb(240,240,240);;
+            color : black;
+        }
+    </style>
 </head>
 <body>
     <p>Youtube Subscribe Button</p>
     <button  onclick="
      subscribe()
-    "  class="subscribe-button">Subscribe</button>
+    "  class="subscribe-button   js-subscribe-button" >subscribe</button>
     <p>Amazon shipping calculator</p>
     <input placeholder="cost of order" class="js-cost-input"
     onkeydown="
@@ -45,9 +64,12 @@
             const buttonElement = document.querySelector('.subscribe-button')
             if (buttonElement.innerHTML === 'subscribe'){
                     buttonElement.innerHTML = 'subscribed'
+                    buttonElement.classList.add('is-subscribed')
                 }
             else {
                 buttonElement.innerHTML = 'subscribe'
+                buttonElement.classList.remove('is-subscribed')
+                
             }
                 }
         
