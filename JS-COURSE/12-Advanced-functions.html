@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Functions</title>
+</head>
+<body>
+    <button onclick="" class="js-button" >
+        click
+    </button>
+
+    <script>
+        const buttonElement = document.querySelector('.js-button')
+        buttonElement.addEventListener('click',() => {
+            console.log('click')
+        })
+        buttonElement.addEventListener('mouseover',() => {
+            console.log('click2')
+        })
+        const eventListener = () => {
+            buttonElement.style.backgroundColor = 'green'
+            buttonElement.style.color
+         }
+
+        buttonElement.addEventListener('mouseout',eventListener)
+
+
+        buttonElement.removeEventListener('mouseout',eventListener)
+       /* function greeting(){
+            console.log('hello')
+        }
+        greeting()
+
+        const num =2;
+        //functions are also values
+        const function1 = function(){
+            console.log('hello too')
+        };
+        console.log(function1())
+        function1()
+
+        const object1 = {
+            num : 2,
+            fun : function(){
+                console.log('hello')
+            }
+        }
+        object1.fun()
+
+        function display(param){
+            console.log(param)
+        }
+        display('hello4')
+        function run(param){
+            param()
+        }
+        run(function(){
+            console.log('hello4')
+        })*/
+       //this is a function that we want to run in the future
+       //settimeout takes in two parameters,the function we want to execute and the time it will take before this function actuallyty runs
+       /*setTimeout(function(){
+        console.log('time out')
+       },2000)
+       console.log('next line')*/
+       /*[
+        'make dinner',
+        'wash dishes',
+        'watch youtube'
+       ].forEach((value,index) => {
+            if (value === 'wash dishes'){
+                return;  //for each function doesnt have continue so we use return instead 
+            }
+            console.log(index,value)
+       })
+    const regularFunction = function(param1){
+        console.log(param1)
+    }
+    regularFunction('regular fun')
+
+    const arrowFunction = (param) => {
+        console.log(param);
+    }
+    arrowFunction('heyyy')
+
+    const object2 ={
+        method(){
+            console.log('hello')
+        }
+    }*/
+    </script>
+</body>
+</html>
