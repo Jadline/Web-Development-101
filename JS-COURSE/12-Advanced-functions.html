@@ -11,7 +11,7 @@
     </button>
 
     <script>
-        const buttonElement = document.querySelector('.js-button')
+        /*const buttonElement = document.querySelector('.js-button')
         buttonElement.addEventListener('click',() => {
             console.log('click')
         })
@@ -26,7 +26,7 @@
         buttonElement.addEventListener('mouseout',eventListener)
 
 
-        buttonElement.removeEventListener('mouseout',eventListener)
+        buttonElement.removeEventListener('mouseout',eventListener)*/
        /* function greeting(){
             console.log('hello')
         }
@@ -89,6 +89,27 @@
             console.log('hello')
         }
     }*/
+
+    //to create a copy of an array
+    const myval = [1,-2,5].filter((value,index) => {
+        if(value >= 0){
+            return true
+        }
+        else {
+            return false;
+        }
+    })
+    console.log(myval)
+
+
+    //map() = to make a copy of the array
+
+    const newval = [1,1,3].map((value,index) => {
+        return value + 10
+    })
+    console.log(newval)
+    //closure
+    //if a function has access to a value,it will always have access to that value
     </script>
 </body>
 </html>
