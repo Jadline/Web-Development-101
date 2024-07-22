@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.task-list {
+    margin-bottom: 20px;
+}
+
+.task-list h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.tasks {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.task-checkbox {
+    margin-right: 10px;
+}
+
+.task-name {
+    flex-grow: 1;
+}
+
+.delete-task {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.delete-task:hover {
+    background-color: #d32f2f;
+}
+
+.add-task {
+    display: flex;
+    align-items: center;
+}
+
+.new-task {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.add-task-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.add-task-btn:hover {
+    opacity: 0.8;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="task-list" id="task-list">
+            <h2>Task List</h2>
+            <ul class="tasks">
+                <li class="task">
+                    <input type="checkbox" class="task-checkbox">
+                    <span class="task-name">Task 1</span>
+                    <button class="delete-task">Delete</button>
+                </li>
+                <li class="task">
+                    <input type="checkbox" class="task-checkbox">
+                    <span class="task-name">Task 2</span>
+                    <button class="delete-task">Delete</button>
+                </li>
+                <li class="task">
+                    <input type="checkbox" class="task-checkbox">
+                    <span class="task-name">Task 3</span>
+                    <button class="delete-task">Delete</button>
+                </li>
+            </ul>
+            <div class="add-task">
+                <input type="text" placeholder="Enter task" class="new-task">
+                <button class="add-task-btn">Add Task</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="task.js"></script>
+</body>
+</html>

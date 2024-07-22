@@ -85,6 +85,10 @@ class BankAccount{
     }
     withdraw(inputAmount){
         let currentBalance = this.getBalance()
+        if (inputAmount > currentBalance){
+            alert('You have insufficient funds')
+            return;
+        }
         const updatedAmount = currentBalance -= inputAmount
         localStorage.setItem(`${this.owner.toLowerCase()}BankBalance`, updatedAmount);
         // document.querySelector('.js-balance').innerHTML = updatedAmount;
